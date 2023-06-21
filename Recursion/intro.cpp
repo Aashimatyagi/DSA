@@ -1,11 +1,14 @@
 #include <iostream>
 using namespace std;
 
+int fibo(int n){
 
-void print(int n){
-    print(n-n+1)
+    if(n<2){
+        return n;
+    }
+    return fibo(n-1)+fibo(n-2);
 }
 
-void main(){
-    print(6);
+int main (){
+    cout<<fibo(0);
 }
